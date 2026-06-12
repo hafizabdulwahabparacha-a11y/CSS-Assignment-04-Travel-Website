@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+ font-family: "Raleway", sans-serif;    
+}
+
+.container1
+{
+margin: 0 auto;
+padding: 0.3em 1em;
+ background-color: rgb(79, 79, 104)
+}
+
+.header
+{
+    
+    padding:4px 8px;
+
+}
+
+.logo
+{
+ width:20%;   
+
+ color:white;
+ font-size:1.5rem; 
+ float: left;
+ padding: 4px;
+ font-weight: bold;
+
+}
+ 
+.header::after
+{
+    content:"";
+    display: block;
+    clear: both
+
+}
+
+
+.navbar
+{   
+    float:left;
+    width:60%;
+    
+    
+}
+ 
+.unordelist
+{
+
+text-align: center;
+padding:0px 15px;
+}
+
+.unordelist li
+{
+    
+    display:inline-block;
+    list-style: none;
+    padding:4px;
+}
+
+.unordelist li a
+{
+    text-decoration: none;
+    color:white;
+    font-size: 1.2rem;
+}
+
+.buttons
+{   width: 20%;
+    float:right;
+    padding: 4px;
+    text-align: right;
+
+}
+
+.buttons #login
+{
+    color:white;
+  background-color: black;
+  border: none;
+  border-radius: 2rem;
+  font-size:13px;
+  padding: 4px 12px;
+}
+
+
+
+.buttons #register
+{
+
+  color:black;
+  background-color: rgb(181, 181, 201);
+  border: none;
+  border-radius: 2rem;
+  font-size:13px;
+  padding: 4px 12px;
+
+}
+
+ 
+  
+ 
+/* Main Container */
+
+ .hero_container {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+   font-family: "Raleway", sans-serif;
+}
+
+
+.bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; 
+   object-fit: cover;  
+   z-index: -2;     
+ } 
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); 
+   z-index: -1;     
+} 
+
+
+ .herosection {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+   text-align: center;
+  color: #ffffff;
+  max-width: 900px;
+  width: 100%;
+  padding: 0 20px;
+} 
+
+
+
+.title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.paragraph1 {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  margin-bottom: 35px;
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.9;
+}
+
+.explore {
+  background: transparent;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  padding: 12px 40px;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.explore:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+
+/* Puray Section ka background aur alignment */
+.destinations-intro {
+  background-color: #f7f7f7;       /* Halka off-white background jaisa image mein hai */
+  padding: 80px 40px;              /* Oopar aur neeche se behtareen spacing */
+  font-family: "Raleway", sans-serif;
+}
+
+/* Content block ko left-aligned rakhne ke liye container */
+.intro-content {
+  max-width: 1200px;
+  margin: 0 auto;                  /* Center block but text remains left-aligned */
+  text-align: left;                /* Text left side par hi rahega */
+}
+
+/* Badi aur bold heading */
+.main-heading {
+  font-size: 3.5rem;               /* Bada aur solid font size */
+  font-weight: 800;                /* Extra bold weight */
+  color: #000000;                  /* Solid black rang */
+  line-height: 1.15;               /* Lines ko aapas mein close rakhne ke liye */
+  margin-bottom: 25px;
+}
+
+/* SnapTrip ko orange/yellow highlight dene ke liye */
+.brand-highlight {
+  color: #ffb606;                  /* Image se nikala gaya perfect orange-yellow tone */
+}
+
+/* Subtitle paragraph styling */
+.sub-paragraph {
+  font-size: 1.1rem;
+  color: #333333;                  /* Halka dark grey text */
+  font-weight: 500;
+  margin-bottom: 35px;
+}
+
+/* Pill-shaped solid black button */
+.start-trip-btn {
+  background-color: #000000;       /* Solid black background */
+  color: #ffffff;                  /* White text */
+  border: none;
+  padding: 14px 30px;              /* Button ko khula banane ke liye */
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 50px;             /* Kono ko bilkul round (pill shape) karne ke liye */
+  cursor: pointer;
+  display: inline-flex;            /* Icon aur text ko ek line mein barabar rakhne ke liye */
+  align-items: center;
+  gap: 10px;                       /* Icon aur text ke darmiyan fasla */
+  transition: background-color 0.3s ease;
+}
+
+/* Button par hover effect */
+.start-trip-btn:hover {
+  background-color: #333333;       /* Hover karne par halka sa grey-black hoga */
+}
+
+/* Button ke andar ka chhota icon */
+.btn-icon {
+  font-size: 1.1rem;
+  /* Agar icon ko thoda rotate karna ho toh transform use kar sakte hain */
+  transform: rotate(45deg); 
+  display: inline-block;
+}
+
+
+/* Poore section ka outer container */
+.cards-container {
+  background-color: #f4f4f4;       
+  padding: 60px 20px;
+  text-align: center;              
+  font-family: 'Roboto', sans-serif;
+  
+  /* !!! YEH SABSE ZAROORI LINE HAI !!! */
+  font-size: 0;                    /* Is se inline-block elements ke darmiyan ki faaltoo space khatam ho jayegi */
+}
+
+/* Single Card Layout */
+.tour-card {
+  display: inline-block;           /* Cards ko ek line mein laane ke liye */
+  width: 23%;                      /* 4 cards ke hisab se width */
+  margin: 0 1%;                    /* Left aur right par 1% ka gap */
+  background-color: #ffffff;       
+  border-radius: 15px;             
+  overflow: hidden;                
+  text-align: left;                
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05); 
+  vertical-align: top;             /* Sabhi cards ko oopar se ek seedh mein rakhne ke liye */
+  
+  /* !!! YEH BHI ZAROORI HAI !!! */
+  font-size: 16px;                 /* Container par 0 karne ke baad, card ke andar ka text wapas normal karne ke liye */
+}
+
+/* --- Baqi Image aur Text ki styling pehle jaisi hi rahegi --- */
+.card-img-box {
+  width: 100%;
+  height: 180px;                   
+  overflow: hidden;
+}
+
+.card-img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;               
+}
+
+.card-details {
+  padding: 20px;
+}
+
+.destination-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 8px;
+}
+
+.stars {
+  color: #ffb606;                  
+  font-size: 1rem;
+  margin-right: 8px;
+}
+
+.score {
+  font-size: 0.95rem;
+  font-weight: bold;
+  color: #000000;
+}
+
+.location {
+  font-size: 0.95rem;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 12px;
+}
+
+.price {
+  font-size: 1rem;
+  color: #555555;                  
+}
+
+.price strong {
+  font-size: 1.15rem;
+  color: #000000;                  
+}
+
+
+/* Footer ka main container background */
+.main-footer {
+  background-color: #f7f7f7;       /* Halka off-white rang jo aapki picture mein hai */
+  padding: 40px 20px;              /* Oopar aur neeche se behtareen spacing */
+  text-align: center;              /* Tamam elements (icons aur text) ko center karne ke liye */
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+}
+
+/* Social Icons Wrapper */
+.social-icons {
+  margin-bottom: 15px;             /* Icons aur text ke darmiyan ka fasla */
+}
+
+/* Single Social Icon Styling */
+.social-icons .icon {
+  display: inline-block;           /* Icons ko ek line mein barabar rakhne ke liye */
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0 12px;                  /* Icons ke aapas ka left aur right gap */
+  transition: opacity 0.3s ease;
+}
+
+/* Icons Colors (Aapki image ke mutabik customized colors) */
+.icon-fb {
+  color: #3b5998;                  /* Facebook Classic Blue */
+}
+
+.icon-insta {
+  color: #e1306c;                  /* Instagram Pinkish/Red */
+}
+
+.icon-linkedin {
+  color: #0077b5;                  /* LinkedIn Solid Blue */
+}
+
+/* Hover Effect (Jab mouse upar aaye toh thoda soft look) */
+.social-icons .icon:hover {
+  opacity: 0.7;
+}
+
+/* Copyright Text Styling */
+.copyright-text {
+  font-size: 0.95rem;
+  color: #333333;                  /* Halka dark grey rang safaai ke liye */
+  font-weight: 400;
+  margin: 0;
+}
+
